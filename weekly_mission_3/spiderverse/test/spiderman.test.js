@@ -6,6 +6,7 @@ describe("Test Suite Dummy Description", () => {
     });
   })
 */
+const Spiderman=require('./../app/spiderman.js');
 
 describe("Unit Tests for Spiderman class", () => {
     test('Case 1: Create an Spiderman object', () => {
@@ -17,9 +18,9 @@ describe("Unit Tests for Spiderman class", () => {
 		// Validamos que este código funcione de la forma esperada
 		expect(andrewGarfield.name).toBe("Spiderman Sony");
 		expect(andrewGarfield.age).toBe(31);
-		expect(andrewGarfield.actor).toBe("Andrew Garfield");
-		expect(andrewGarfield.movies).toBe(2);
-		expect(andrewGarfield.studio).toBe("Sony");
+		expect(andrewGarfield.actorInt).toBe("Andrew Garfield");
+		expect(andrewGarfield.numPelis).toBe(2);
+		expect(andrewGarfield.estudioCine).toBe("Sony");
         
 	});
 });

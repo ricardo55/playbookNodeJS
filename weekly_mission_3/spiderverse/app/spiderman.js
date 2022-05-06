@@ -9,7 +9,7 @@ class Spiderman {
     }
 
     getInfo() {
-        return `${this.name} es un Spiderman, tiene ${this.age} años, es un actor ${this.actorInt} y ha participado en ${this.numPelis} películas.`;
+        return `${this.name} es un Spiderman, tiene ${this.age} años, es un actor en ${this.actorInt} y ha participado en ${this.numPelis} películas en el estudio ${this.estudioCine}.`;
     }
 
 

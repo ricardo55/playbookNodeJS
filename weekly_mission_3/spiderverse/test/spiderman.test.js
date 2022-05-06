@@ -24,4 +24,12 @@ describe("Unit Tests for Spiderman class", () => {
         //Ahora si ya pasan todas las pruebas, podemos decir que el código funciona de la forma esperada
         
 	});
+
+    test('2) Use the method getInfo()', () => {
+		const tomHolland = new Spiderman("Tom Holland", 25,"Spiderman Marvel", 5, "Marvel")
+		expect(tomHolland.getInfo()).toBe("Tom Holland es un Spiderman, tiene 25 años, es un actor en Spiderman Marvel y ha participado en 5 películas en el estudio Marvel.")
+	});
+
+
+
 });

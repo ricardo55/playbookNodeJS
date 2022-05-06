@@ -21,6 +21,7 @@ describe("Unit Tests for Spiderman class", () => {
 		expect(andrewGarfield.actorInt).toBe("Andrew Garfield");
 		expect(andrewGarfield.numPelis).toBe(2);
 		expect(andrewGarfield.estudioCine).toBe("Sony");
+        //Ahora si ya pasan todas las pruebas, podemos decir que el código funciona de la forma esperada
         
 	});
 });

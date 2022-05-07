@@ -16,3 +16,10 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
 });
+
+// Regresando un objeto
+// localhost:3000/explorersInNode
+app.get('/explorersInNode', (req, res) => {
+    const explorer = {name: "Explorer", msg: "Hello"}
+    res.send(explorer)
+  });

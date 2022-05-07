@@ -10,20 +10,27 @@ class User {
     this.lastUpdated = new Date()
   }
 
-  get getUsername(){
+  get getUsername() {
     return this.username
   }
 
-  get getBio(){
+  get getBio() {
     return this.bio
   }
 
-  get getDateCreated(){
+  get getDateCreated() {
     return this.dateCreated
   }
 
-  get getLastUpdated(){
+  get getLastUpdated() {
     return this.lastUpdated
+  }
+  set setUsername(newUsername) {
+    this.username = newUsername
+  }
+
+  set setBio(newBio) {
+    this.bio = newBio
   }
 
 

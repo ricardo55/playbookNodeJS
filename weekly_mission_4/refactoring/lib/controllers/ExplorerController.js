@@ -15,19 +15,21 @@ class ExplorerController {
     // metodo que regresa la lista de usernames de los explorers filtrados por la misión enviada.
     static getExplorersUsernamesByMission(mission) {
 
-        const explorers = this.getExplorersByMission(mission);
-        return ExplorerService.getExplorersUsernames(explorers);
+        const explorers = Reader.readJsonFile("./explorers.json");
+        return ExplorerService.getExplorersUsernamesByMission(explorers,mission);
     }
 
     // metod que regresa la cantidad de explorers en la misión enviada
-    static getExplorersAmonutByMission(mission) {
-        
-        const explorers = this.getExplorersByMission(mission);
-        return ExplorerService.getExplorersAmount(explorers);
+    static getExplorersAmountByMission(mission) {
+
+        const explorers = Reader.readJsonFile("./explorers.json");
+        return ExplorerService.getAmountOfExplorersByMission(explorers, mission);
     }
 
 
 
 
 }
+
+module.exports = ExplorerController;
 

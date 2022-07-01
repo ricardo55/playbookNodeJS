@@ -9,7 +9,7 @@ describe("Test for Reader", () => {
 
     test("2. leer archivo Json que no existe", () => {
         const explorers = Reader.readJsonFile("./explorers.json");
-        expect(explorers).toBe(explorers)
+        expect(explorers).toBe(explorers);
     });
 
 });

@@ -11,7 +11,12 @@ class ExplorerController {
         return ExplorerService.filterByMission(explorers, mission);
     }
 
-    
+    static getExplorersUsernamesByMission(mission){
+        const explorers = this.getExplorersByMission(mission);
+        return ExplorerService.getExplorersUsernames(explorers);
+    }
+
+
 
 
 }

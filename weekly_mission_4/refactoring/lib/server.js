@@ -16,6 +16,11 @@ app.get("/v1/explorers/:mission", (request, response) => {
     response.json(explorersInMission);
 });
 
+app.get("/v1/explorers/amount/:mission", (request, response) => {
+    const mission = request.params.mission;
+    const explorersAmountInMission = ExplorerController.getExplorersAmountByMission(mission);
+    response.json({mission: request.params.mission, quantity: explorersAmountInMission});
+});
 
 
 

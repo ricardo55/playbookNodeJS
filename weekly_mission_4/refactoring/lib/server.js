@@ -8,6 +8,18 @@ app.get("/", (request, response) => {
     response.json({message: "FizzBuzz Api welcome!"});
 });
 
+// endpoint para recibir un parámetro por query params, y regresar la lista de 
+// explorers filtrados por el parámetro.
+app.get("/v1/explorers/:mission", (request, response) => {
+    const mission = request.params.mission;
+    const explorersInMission = ExplorerController.getExplorersByMission(mission);
+    response.json(explorersInMission);
+});
+
+
+
+
+
 app.listen(port, () => {
     console.log(`FizzBuzz API in localhost:${port}`);
 });
